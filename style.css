@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500;700&family=Ribeye&family=Roboto:wght@400;500&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Gelasio', serif;
+    font-family: 'Ribeye', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+/* header section`s style  start */
+
+header {
+    padding: 35px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background: transparent;
+
+
+}
+
+.navbar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+
+}
+
+.navbar_link {
+    color: #FFF;
+    font-family: Ribeye;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 1.44px;
+
+}
+
+
+
+
+
+.navbar_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.navbar_list li a {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: capitalize;
+
+}
+
+.navbar_btn {
+    padding: 14px 36px;
+    border-radius: 5px;
+    background: #C9453B;
+    border: none;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    cursor: pointer;
+
+}
+
+/* header section`s style end */
+
+
+/* main section style start */
+
+/* intro section start */
+
+#intro {
+    background-image: url("./assets/images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* margin-top: 300px; */
+    margin-bottom: 140px;
+    height: 900px;
+}
+
+
+.intro_wrapper {
+    padding-top: 300px;
+}
+
+
+.intro_section_title {
+    width: 804px;
+    color: #FFF;
+    font-family: Gelasio;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 30px;
+
+}
+
+.intro_section_desc {
+    width: 458px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 40px;
+    opacity: 0.6;
+}
+
+.intro_section_btn {
+    padding: 18px 47px;
+    border-radius: 5px;
+    background: #C9453B;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 244px;
+}
+
+
+
+
+/* intro section end */
+
+#popular {
+    margin-bottom: 140px;
+}
+
+.popular_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popular_sec_title {
+    color: #000;
+    font-family: Gelasio;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.popular_sec_desc {
+    width: 735px;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    opacity: 0.6;
+    margin-bottom: 50px;
+}
+
+.popular_card_list {
+    display: flex;
+    align-items: center;
+    gap: 31px;
+}
+
+.popular_card {
+    width: 360px;
+    height: 500px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #FFF;
+
+}
+
+
+.popular_card :hover {
+    box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.08);
+}
+
+.popular_card_body {
+    padding: 30px 27px;
+}
+
+.popular_card_title {
+    color: #000;
+    text-align: center;
+    font-family: Gelasio;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    margin-bottom: 10px;
+}
+
+.popular_card_desc {
+    width: 306px;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    opacity: 0.6;
+}
+
+
+.hisory_card {
+    width: 360px;
+    height: 500px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #FFF;
+}
+
+.history_card:hover {
+    box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.08);
+
+}
+
+.history_card_body {
+    padding: 30px 27px;
+}
+
+.history_card_title {
+    color: #000;
+    text-align: center;
+    font-family: Gelasio;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+
+}
+
+.history_card_desc {
+    width: 289px;
+    height: 55px;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin-top: 10px
+}
+
+.modern_card {
+    width: 360px;
+    height: 500px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #FFF;
+    /* box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.08); */
+}
+
+.modern_card:hover {
+    box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.08);
+}
+
+.modern_card_body {
+    padding: 30px 27px
+}
+
+.modern_card_title {
+    color: #000;
+    font-family: Gelasio;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.modern_card_desc {
+    width: 334px;
+    height: 55px;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin-top: 10px;
+
+}
+
+
+#new {
+    margin-bottom: 175px;
+
+}
+
+.new_wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.new_sec_title {
+    color: #000;
+    font-family: Gelasio;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    text-align: center;
+}
+
+.new_sec_desc {
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin-top: 20px
+}
+
+.new_card_list {
+    display: flex;
+    align-items: center;
+    gap: 73px;
+
+}
+
+.new_card {
+    margin-top: 60px;
+
+}
+
+.new_card_title {
+    color: #000;
+    font-family: Gelasio;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    margin-top: 20px;
+}
+
+.new_card_desc {
+    color: #000;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: 8px;
+}
+
+.new_card_desc1 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    ;
+}
+
+.new_card_desc2 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+
+}
+
+#sea {
+    margin-bottom: 200px;
+}
+
+.container {
+    justify-content: space-between;
+}
+
+.sea_sec_title {
+    color: #000;
+    font-family: Gelasio;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sea_sec_desc {
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 56px;
+}
+
+.sea_card_body {
+    margin-top: 56px;
+}
+
+.sea_card_body h2 {
+    margin-top: 35px;
+    width: 271px;
+    height: 32px;
+    flex-shrink: 0;
+    color: #000;
+    /* font-family: Gelasio;
+    font-size: 20px; */
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+.sea_card_body p {
+    margin-top: 10px;
+    width: 470px;
+    height: 151px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.sea_card_body b {
+    width: 192px;
+    height: 30px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    margin-top:10px
+}
+.flex{
+    display: flex;
+    
+}
+/* main section style end */
